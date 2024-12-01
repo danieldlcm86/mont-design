@@ -6,7 +6,15 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'], // Agregas Montserrat
+      },
+      colors: {
+        goldMont: '#bcac69', // GoldBase
+        goldDark : '#2d291e',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')

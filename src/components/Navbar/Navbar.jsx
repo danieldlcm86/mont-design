@@ -7,120 +7,71 @@ const Navbar = () => {
 
   return (
       <>
-      <nav className="flex justify-between items-center fixed z-50 top-0 w-full py-2 px-8 shadow-lg bg-zinc-50">
+      <nav className="flex justify-between items-center fixed z-50 top-0 w-full py-1 px-8 bg-zinc-50 overflow-visible mb-0">
         
         {/* Left Side */}
-        <ul className="flex items-center gap-4">
+        <ul className="flex items-center gap-4 font-montserrat">
           <li >
             <NavLink to="/">
               <img src={logoLight} alt="Logo de Mont Design" className="w-20" />
             </NavLink>
           </li>
           
-          <li className="hover:text-yellow-800">
+          <li className="hover:text-goldMont hover:font-medium">
             <NavLink
-              to="/all"
+              to="/muebles"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? activeStyle : ""
               }
             >
-              All
+              Muebles
             </NavLink>
           </li>
-          <li className="hover:text-yellow-800">
+          <li className="hover:text-goldMont hover:font-medium">
             <NavLink
-              to="/clothes"
+              to="/escritorios"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? activeStyle : ""
               }
             >
-              Clothes
+              Escritorios
             </NavLink>
           </li>
-          <li className="hover:text-yellow-800">
+          <li className="hover:text-goldMont hover:font-medium">
             <NavLink
-              to="/electronics"
+              to="/comedores"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? activeStyle : ""
               }
             >
-              Electronics
+              Comedores
             </NavLink>
           </li>
-          <li className="hover:text-yellow-800">
+          <li className="hover:text-goldMont hover:font-medium">
             <NavLink
-              to="/furnitures"
+              to="/sobre-nosotros"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? activeStyle : ""
               }
             >
-              Furnitures
+              ¿Quiénes somos?
             </NavLink>
           </li>
-          <li className="hover:text-yellow-800">
-            <NavLink
-              to="/toys"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? activeStyle : ""
-              }
-            >
-              Toys
-            </NavLink>
-          </li>
-          <li className="hover:text-yellow-800">
-            <NavLink
-              to="/others"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? activeStyle : ""
-              }
-            >
-              Others
-            </NavLink>
-          </li>
+
         </ul>
         
         <hr />
 
         {/* Right Side */}
-        <ul className="flex items-center gap-4">
+        <ul className="flex items-center gap-4 font-montserrat">
           <li>
             <NavLink
-              to="/my-account"
+              to="/login"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >
-              MyAccount
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/my-order"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
-            >
-              MyOrder
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/my-orders"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
-            >
-              MyOrders
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/sign-in"
-              className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              }
-            >
-              SignIn
+              Iniciar sesión
             </NavLink>
           </li>
           <li>

@@ -1,34 +1,36 @@
 import Cover1 from '../../assets/Carrousel/Insta_mont_design.png'
-import Cover2 from '../../assets/Carrousel/banho-mueble.jpg'
+// import Cover2 from '../../assets/Carrousel/banho-mueble.jpg'
 import Cover3 from '../../assets/Carrousel/comedor-moderno.jpg'
 import Cover4 from '../../assets/Carrousel/escritorio-madera-colineal.webp'
 import Cover5 from '../../assets/Carrousel/muebles-dark.jpg'
+import BannerMain from './Banners/BannerMain'
 
 
 const Carrousel1 = () => {
     return (
         <>
-        <div id="default-carousel" className="relative w-full" data-carousel="slide">
+        <div id="default-carousel" className="relative top-0 w-full" data-carousel="slide">
             {/* <!-- Carousel wrapper --> */}
             <div className="relative h-56 overflow-hidden md:h-screen">
                 {/* <!-- Item 1 --> */}
-                <div className="duration-1000 ease-in-out" data-carousel-item="active" >
-                    <img src={Cover1} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" />
+                <div className="duration-3000 ease-in-out" data-carousel-item="active" >
+                    {/* <img src={Cover1} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" /> */}
+                    <BannerMain className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" />
                 </div>
                 {/* <!-- Item 2 --> */}
-                <div className="duration-1000 ease-in-out" data-carousel-item="active">
-                    <img src={Cover2} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" />
+                <div className="duration-2000 ease-in-out" data-carousel-item="inactive">
+                    <img src={Cover1} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" />
                 </div>
                 {/* <!-- Item 3 --> */}
-                <div className="duration-1000 ease-in-out" data-carousel-item="active">
+                <div className="duration-2000 ease-in-out" data-carousel-item="inactive">
                     <img src={Cover3} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" />
                 </div>
                 {/* <!-- Item 4 --> */}
-                <div className="duration-1000 ease-in-out" data-carousel-item="active">
+                <div className="duration-2000 ease-in-out" data-carousel-item="inactive">
                     <img src={Cover4} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" />
                 </div>
                 {/* <!-- Item 5 --> */}
-                <div className="hidden duration-1000 ease-in-out" data-carousel-item="active">
+                <div className="duration-1000 ease-in-out" data-carousel-item="inactive">
                     <img src={Cover5} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="slide" />
                 </div>
             </div>
